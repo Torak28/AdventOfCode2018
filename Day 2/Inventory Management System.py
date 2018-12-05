@@ -3,6 +3,7 @@ import config
 
 input_str = requests.get('https://adventofcode.com/2018/day/2/input', cookies=dict(session=config.session)).text
 
+# Part 1
 word = ''
 twos = 0
 threes = 0
@@ -25,3 +26,34 @@ for i in input_str:
 		word = ''
 
 print(f'Part 1 - resulting frequency: {twos * threes}')
+
+# Part 2
+word = ''
+word_tab = []
+
+
+def sub_strings(a: str, b: str) -> str:
+	out = ''
+	for i in list(zip(a, b)):
+		if len(set(i)) is 1:
+			out += i[0]
+	return out
+
+for i in input_str:
+	if i.isalpha():
+		word = word + i
+	else:
+		word_tab.append(word)
+		word = ''
+
+red_flag = False
+for i in word_tab:
+	for j in word_tab:
+		out = sub_strings(i, j)
+		if len(i) - len(out) == 1:
+			red_flag = True
+			break
+	if red_flag:
+		break
+
+print(f'Part 2 - common letters between the two correct box IDs: {out}')
