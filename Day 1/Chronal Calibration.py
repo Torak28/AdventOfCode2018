@@ -3,10 +3,10 @@ import config
 
 input_str = requests.get('https://adventofcode.com/2018/day/1/input', cookies=dict(session=config.session)).text
 
+# Part 1
 out = 0
 number = ''
 
-# Part 1
 for i in input_str:
 	if i.isdigit():
 		number = number + i
