@@ -1,4 +1,4 @@
 *.pyc
 __pycache__
-.pttest_cache
+.pytest_cache
 config.py
