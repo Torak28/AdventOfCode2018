@@ -8,7 +8,7 @@ I was trying to take advantage of how the input string was constructed. With eve
 * operator,
 * space,
 
-Digit I use `string` type to contain whole number. Whit every iteration of for loop I add digit to `number` variable to then convert it to `int` when space occure. `Operator` is first char of line and it just determine if when the space occure the `number` will be added to `output`.
+For digit I use `string` type to contain whole number. Whit every iteration of for loop I add digit to `number` variable to then convert it to `int` when space occurs. `Operator` is first char of line and it task is to determine if we gonna add or subtract. That information is then used when the space occurs - the `number` is added to `output`.
 
 :gift:
 
