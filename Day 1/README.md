@@ -12,4 +12,9 @@ For digit I use `string` type to contain whole number. Whit every iteration of f
 
 :gift:
 
+# Visualization
+
+![alt text][2]
+
 [1]: https://adventofcode.com/2018/day/1
+[2]: https://raw.githubusercontent.com/Torak28/AdventOfCode2018/master/Day%201/day1.png
