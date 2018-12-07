@@ -25,4 +25,4 @@ while(len(word) is not 0):
 For the second part I wrote function to subtract two strings, so e.g. `foo1` - `foo2` = `foo`. With that functionality I just iterate over all words and search for the first time when the result string has length of 1.
 
 [1]: https://adventofcode.com/2018/day/2
-[2]: https://raw.githubusercontent.com/Torak28/AdventOfCode2018/master/Day%201/day2.png
+[2]: https://raw.githubusercontent.com/Torak28/AdventOfCode2018/master/Day%202/day2.png
