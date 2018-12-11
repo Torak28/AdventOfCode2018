@@ -50,5 +50,5 @@ for line in input_str:
 	highest_id = id
 	tab, overlap_tab = draw_rect(tab, id, coord, area, overlap_tab)
 
-print(f'Part 1: {count_x(tab)}')
-print(f'Part 2: {overlap_count(highest_id, overlap_tab)}')
+print(f'Part 1 - How many square inches of fabric elves need: {count_x(tab)}')
+print(f'Part 2 - ID of only claim that doesn\'t overlap: {overlap_count(highest_id, overlap_tab)}')
